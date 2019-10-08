@@ -22,11 +22,11 @@ const Composition = styled.div`
 
 export const shapes = () => (
   <Composition>
-    <Donut fill="#37D5D3" style={{ left: 370, top: 30, width: 120, height: 120 }}></Donut>
-    <L fill="#66BF3C" style={{ left: 360, top: 220, width: 120, height: 120 }}></L>
-    <Slice fill="#FF4785" width={120} height={120} style={{ left: 200, top: 160 }}></Slice>
-    <Square fill="#1EA7FD" width={80} height={80} style={{ left: 220, top: 20 }}></Square>
-    <Triangle fill="#FFAE00" style={{ left: 20, top: 200, width: 140, height: 140 }}></Triangle>
-    <Z fill="#FC521F" style={{ left: 50, top: 30, width: 120, height: 120 }}></Z>
+    <Donut fill="#37D5D3" style={{ left: 360, top: 210, width: 120, height: 120 }}></Donut>
+    <L fill="#66BF3C" style={{ left: 40, top: 30, width: 120, height: 120 }}></L>
+    <Slice fill="#FF4785" width={120} height={120} style={{ left: 380, top: 40 }}></Slice>
+    <Square fill="#1EA7FD" width={80} height={80} style={{ left: 80, top: 250 }}></Square>
+    <Triangle fill="#FFAE00" style={{ left: 190, top: 50, width: 140, height: 140 }}></Triangle>
+    <Z fill="#FC521F" style={{ left: 200, top: 230, width: 120, height: 120 }}></Z>
   </Composition>
 )
