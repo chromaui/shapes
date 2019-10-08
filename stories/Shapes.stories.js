@@ -11,7 +11,7 @@ export default {
   title: "Shapes"
 }
 
-export const donut = () => <Donut fill="#37D5D3"></Donut>
+export const donut = () => <Donut fill="#6F2CAC"></Donut>
 export const l = () => <L fill="#66BF3C"></L>
 export const slice = () => <Slice fill="#FF4785"></Slice>
 export const square = () => <Square fill="#1EA7FD"></Square>
