@@ -20,7 +20,7 @@ const Composition = styled.div`
   }
 `
 
-export const shapes = () => (
+export const shuffled = () => (
   <Composition>
     <Donut fill="#37D5D3" style={{ left: 360, top: 210, width: 120, height: 120 }}></Donut>
     <L fill="#66BF3C" style={{ left: 40, top: 30, width: 120, height: 120 }}></L>
@@ -29,4 +29,22 @@ export const shapes = () => (
     <Triangle fill="#FFAE00" style={{ left: 190, top: 50, width: 140, height: 140 }}></Triangle>
     <Z fill="#FC521F" style={{ left: 200, top: 230, width: 120, height: 120 }}></Z>
   </Composition>
+)
+
+const Grid = styled.div`
+  display: inline-grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 20px;
+`
+
+export const grid = () => (
+  <Grid>
+    <Donut fill="#37D5D3"></Donut>
+    <L fill="#66BF3C"></L>
+    <Slice fill="#FF4785"></Slice>
+    <Square fill="#1EA7FD"></Square>
+    <Triangle fill="#FFAE00"></Triangle>
+    <Z fill="#FC521F"></Z>
+  </Grid>
 )
