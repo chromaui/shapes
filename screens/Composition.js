@@ -21,11 +21,11 @@ const Composition = styled.div`
 
 export default () => (
   <Composition>
-    <Donut style={{ left: 380, top: 250, height: 120 }}></Donut>
+    <Triangle style={{ left: 380, top: 250, height: 120 }}></Triangle>
     <L style={{ left: 40, top: 0, height: 120 }}></L>
-    <Slice style={{ left: 440, top: 20, height: 120 }}></Slice>
-    <Square style={{ left: 0, top: 280, height: 80 }}></Square>
-    <Triangle style={{ left: 200, top: 70, height: 120 }}></Triangle>
+    <Slice style={{ left: 0, top: 280, height: 100 }}></Slice>
+    <Square style={{ left: 460, top: 20, height: 100 }}></Square>
+    <Donut style={{ left: 220, top: 100, height: 120 }}></Donut>
     <Z style={{ left: 200, top: 330, height: 120 }}></Z>
   </Composition>
 )
