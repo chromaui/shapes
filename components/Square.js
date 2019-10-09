@@ -1,15 +1,14 @@
 import React from "react"
-import styled from "@emotion/styled"
-
-const Svg = styled.svg(({ children, ...props }) => ({
-  width: 100,
-  height: 100,
-  borderRadius: 5,
-  ...props
-}))
+import Shape from "./Shape"
 
 export default props => (
-  <Svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" {...props}>
+  <Shape
+    viewBox="0 0 90 90"
+    xmlns="http://www.w3.org/2000/svg"
+    color="#1EA7FD"
+    {...props}
+    style={{ borderRadius: 5, ...props.style }}
+  >
     <path d="M0 0h90v90H0z" />
-  </Svg>
+  </Shape>
 )

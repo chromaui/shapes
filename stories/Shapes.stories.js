@@ -8,12 +8,12 @@ import Triangle from "../components/Triangle"
 import Z from "../components/Z"
 
 export default {
-  title: "Shapes"
+  title: "components|Shapes"
 }
 
-export const donut = () => <Donut fill="#6F2CAC"></Donut>
-export const l = () => <L fill="#66BF3C"></L>
-export const slice = () => <Slice fill="#FF4785"></Slice>
-export const square = () => <Square fill="#1EA7FD"></Square>
-export const triangle = () => <Triangle fill="#FFAE00"></Triangle>
-export const z = () => <Z fill="#FC521F"></Z>
+export const donut = () => <Donut />
+export const l = () => <L />
+export const slice = () => <Slice />
+export const square = () => <Square />
+export const triangle = () => <Triangle />
+export const z = () => <Z />
