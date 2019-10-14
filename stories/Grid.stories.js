@@ -4,7 +4,7 @@ import Grid from "../screens/Grid"
 export default {
   title: "screens|Shapes/Grid",
   parameters: {
-    chromatic: { viewports: [250, 750] }
+    chromatic: { viewports: [320, 960] }
   }
 }
 
