@@ -11,5 +11,5 @@ jobs:
         yarn
     - uses: chromaui/action@releases/v1
       with:
-        appCode: ${{ secrets.CHROMATIC_APP_CODE }}
+        appCode: o2a25o2ch5c
         token: ${{ secrets.GITHUB_TOKEN }}
