@@ -11,8 +11,8 @@ addDecorator((storyFn, { kind, parameters }) => {
         styles={css`
           body {
             margin: 0;
-            background: ${isScreen ? '#f6f9fc' : '#fff'};
             padding: ${isScreen ? 0 : 1}rem;
+            background: ${isScreen ? '#f6f9fc' : '#fff'};
           }
         `}
       />
