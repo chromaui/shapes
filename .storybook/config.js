@@ -3,8 +3,8 @@ import { addDecorator, addParameters, configure } from '@storybook/react';
 import { Global, css } from '@emotion/core';
 
 addDecorator((storyFn, { kind, parameters }) => {
-  const type = kind.split(parameters.options.hierarchyRootSeparator)[0];
-  const isScreen = type === 'screens';
+  const [storyRoot] = kind.split(parameters.options.hierarchyRootSeparator);
+  const isScreen = storyRoot === 'screens';
   return (
     <>
       <Global
