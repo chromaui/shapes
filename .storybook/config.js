@@ -1,4 +1,25 @@
-import { addParameters, configure } from '@storybook/react';
+import React from 'react';
+import { addDecorator, addParameters, configure } from '@storybook/react';
+import { Global, css } from '@emotion/core';
+
+addDecorator((storyFn, { kind, parameters }) => {
+  const [storyRoot] = kind.split(parameters.options.hierarchyRootSeparator);
+  const isScreen = storyRoot === 'screens';
+  return (
+    <>
+      <Global
+        styles={css`
+          body {
+            margin: 0;
+            padding: ${isScreen ? 0 : 1}rem;
+            background: ${isScreen ? '#f6f9fc' : '#fff'};
+          }
+        `}
+      />
+      {storyFn()}
+    </>
+  );
+});
 
 addParameters({
   options: {
