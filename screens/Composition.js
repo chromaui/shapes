@@ -1,12 +1,12 @@
-import React from "react"
-import styled from "@emotion/styled"
+import React from 'react';
+import styled from '@emotion/styled';
 
-import Donut from "../components/Donut"
-import L from "../components/L"
-import Slice from "../components/Slice"
-import Square from "../components/Square"
-import Triangle from "../components/Triangle"
-import Z from "../components/Z"
+import Donut from '../components/Donut';
+import L from '../components/L';
+import Slice from '../components/Slice';
+import Square from '../components/Square';
+import Triangle from '../components/Triangle';
+import Z from '../components/Z';
 
 const Composition = styled.div`
   display: inline-block;
@@ -17,7 +17,7 @@ const Composition = styled.div`
   svg {
     position: absolute;
   }
-`
+`;
 
 export default () => (
   <Composition>
@@ -28,4 +28,4 @@ export default () => (
     <Triangle style={{ left: 200, top: 70, height: 120 }}></Triangle>
     <Z style={{ left: 200, top: 330, height: 120 }}></Z>
   </Composition>
-)
+);

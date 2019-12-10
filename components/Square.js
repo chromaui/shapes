@@ -1,5 +1,5 @@
-import React from "react"
-import Shape from "./Shape"
+import React from 'react';
+import Shape from './Shape';
 
 export default props => (
   <Shape
@@ -11,4 +11,4 @@ export default props => (
   >
     <path d="M0 0h90v90H0z" />
   </Shape>
-)
+);

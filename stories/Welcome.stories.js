@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "@emotion/styled"
-import Composition from "../screens/Composition"
+import React from 'react';
+import styled from '@emotion/styled';
+import Composition from '../screens/Composition';
 
 const Welcome = styled.div`
   display: inline-block;
@@ -18,15 +18,15 @@ const Welcome = styled.div`
   svg {
     opacity: 0.5;
   }
-`
+`;
 
 export default {
-  title: "Welcome"
-}
+  title: 'Welcome',
+};
 
 export const hi = () => (
   <Welcome>
     <Composition />
     <h1>Hi there, this is a demo Storybook for testing purposes.</h1>
   </Welcome>
-)
+);
