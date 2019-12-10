@@ -9,16 +9,15 @@ import Tile from '../components/Tile';
 import Triangle from '../components/Triangle';
 import Z from '../components/Z';
 
-const Grid = styled.div`
+const Tiles = styled.div`
   display: inline-grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
   grid-gap: 60px;
   justify-items: center;
-  margin: 20px;
+  padding: 1rem;
 
   ${Tile} {
     width: 100%;
-    padding: 0.5rem;
     &:after {
       content: '';
       display: block;
@@ -28,7 +27,7 @@ const Grid = styled.div`
 `;
 
 export default () => (
-  <Grid>
+  <Tiles>
     <Tile>
       <Donut />
     </Tile>
@@ -47,5 +46,5 @@ export default () => (
     <Tile>
       <Z />
     </Tile>
-  </Grid>
+  </Tiles>
 );

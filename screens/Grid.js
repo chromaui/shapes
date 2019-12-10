@@ -13,7 +13,7 @@ const Grid = styled.div`
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
   grid-gap: 100px 80px;
   justify-items: center;
-  margin: 20px;
+  padding: 1rem;
 `;
 
 export default () => (
