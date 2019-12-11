@@ -22,6 +22,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "chromatic"
+    "chromatic": "chromatic --app-code 2gsw6ht6am",
+    "chromatic-dev": "CHROMATIC_INDEX_URL=http://localhost:3007 chromatic"
   }
 }
