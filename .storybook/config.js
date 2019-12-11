@@ -13,6 +13,7 @@ addDecorator((storyFn, { kind, parameters }) => {
     }
   `;
   const wrapperStyles = css`
+    display: ${isScreen ? 'block' : 'inline-block'};
     padding: ${isScreen ? 0 : 1}rem;
   `;
   return (
