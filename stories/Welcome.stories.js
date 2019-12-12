@@ -22,6 +22,9 @@ const Welcome = styled.div`
 
 export default {
   title: 'Welcome',
+  parameters: {
+    isScreen: true,
+  },
 };
 
 export const hi = () => (
