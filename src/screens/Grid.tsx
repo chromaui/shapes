@@ -13,7 +13,7 @@ const Grid = styled.div({
 
 export default () => (
   <Grid>
-    {Object.keys(shapes).map(key => {
+    {Object.keys(shapes).map((key: keyof typeof shapes) => {
       const Shape = shapes[key];
       return <Shape key={key} />;
     })}

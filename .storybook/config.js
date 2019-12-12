@@ -43,12 +43,4 @@ addDecorator((storyFn, context) => {
   return storyFn();
 });
 
-configure(
-  [
-    require.context('../components', true, /\.stories\.js$/),
-    require.context('../layouts', true, /\.stories\.js$/),
-    require.context('../screens', true, /\.stories\.js$/),
-    require.context('../stories', true, /\.stories\.js$/),
-  ],
-  module
-);
+configure(require.context('../src', true, /\.stories\.tsx$/), module);

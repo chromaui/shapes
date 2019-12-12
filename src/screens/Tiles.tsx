@@ -23,7 +23,7 @@ const Tiles = styled.div({
 
 export default () => (
   <Tiles>
-    {Object.keys(shapes).map(key => {
+    {Object.keys(shapes).map((key: keyof typeof shapes) => {
       const Shape = shapes[key];
       return (
         <Tile key={key}>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { SFC, ReactNode } from 'react';
 import styled from '@emotion/styled';
 
 const Container = styled.div({
@@ -31,10 +31,17 @@ const Main = styled.div({
   gridArea: 'main',
 });
 
-export default ({ children, header, sidebar }) => (
+interface Props {
+  header: ReactNode;
+  sidebar: ReactNode;
+}
+
+const App: SFC<Props> = ({ children, header, sidebar }) => (
   <Container>
     <Header>{header}</Header>
     <Sidebar>{sidebar}</Sidebar>
     <Main>{children}</Main>
   </Container>
 );
+
+export default App;

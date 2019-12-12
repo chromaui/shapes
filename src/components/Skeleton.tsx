@@ -1,22 +1,27 @@
 import styled from '@emotion/styled';
 
-const base = ({ width, height }) => ({
+interface Props {
+  width: number | string;
+  height: number | string;
+}
+
+const base = (props: Partial<Props>) => ({
   display: 'inline-block',
-  width,
-  height,
+  width: props.width || 'initial',
+  height: props.height || 'initial',
   overflow: 'hidden',
   backgroundColor: '#eee',
 });
 
-export const Box = styled.div(base, {
+export const Box = styled.div<Props>(base, {
   borderRadius: 2,
 });
 
-export const Oval = styled.div(base, {
+export const Oval = styled.div<Props>(base, {
   borderRadius: '100%',
 });
 
-export const Line = styled.span(
+export const Line = styled.span<Partial<Props>>(
   base,
   ({ width = 'auto', height = '0.8em' }) => ({
     width,
