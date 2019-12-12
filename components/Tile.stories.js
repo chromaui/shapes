@@ -7,4 +7,4 @@ export default {
   decorators: [storyFn => <Tile>{storyFn()}</Tile>],
 };
 
-export * from './Shapes.stories';
+export * from './Shapes';

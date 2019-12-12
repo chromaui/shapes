@@ -1,28 +1,21 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Donut from '../components/Donut';
-import L from '../components/L';
-import Slice from '../components/Slice';
-import Square from '../components/Square';
-import Triangle from '../components/Triangle';
-import Z from '../components/Z';
+import * as shapes from '../components/Shapes';
 
 const Grid = styled.div`
   display: inline-grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
-  grid-gap: 100px 80px;
+  grid-gap: 5rem;
   justify-items: center;
-  padding: 1rem;
+  padding: 4rem;
 `;
 
 export default () => (
   <Grid>
-    <Donut />
-    <L />
-    <Slice />
-    <Square />
-    <Triangle />
-    <Z />
+    {Object.keys(shapes).map(key => {
+      const Shape = shapes[key];
+      return <Shape key={key} />;
+    })}
   </Grid>
 );
