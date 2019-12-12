@@ -1,34 +1,35 @@
 import React, { SFC, ReactNode } from 'react';
 import styled from '@emotion/styled';
 
-import { PageContainer, PageHeader, PageContent } from './Page';
+import Page from './Page';
 
-const AppContainer = styled(PageContainer)({
-  gridTemplateRows: '60px auto',
-  gridTemplateColumns: '60px auto',
-  gridTemplateAreas: '"header header" "sidebar main"',
+const AppContainer = styled.div({
+  display: 'flex',
+  flexDirection: 'row',
+  flexGrow: 1,
 });
 
 const AppSidebar = styled.div({
   display: 'flex',
   flexDirection: 'column',
+  width: 60,
   padding: '1rem 0',
   alignItems: 'center',
-  gridArea: 'sidebar',
   borderRight: '1px solid #ddd',
 });
 
 interface Props {
-  header: ReactNode;
-  sidebar: ReactNode;
+  header?: ReactNode;
+  sidebar?: ReactNode;
 }
 
-const App: SFC<Props> = ({ children, header, sidebar }) => (
-  <AppContainer>
-    <PageHeader>{header}</PageHeader>
-    <AppSidebar>{sidebar}</AppSidebar>
-    <PageContent>{children}</PageContent>
-  </AppContainer>
+const App: SFC<Props> = ({ children, header, sidebar, ...props }) => (
+  <Page header={header}>
+    <AppContainer {...props}>
+      {sidebar && <AppSidebar>{sidebar}</AppSidebar>}
+      {children}
+    </AppContainer>
+  </Page>
 );
 
 export default App;
