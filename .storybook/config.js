@@ -1,4 +1,5 @@
 import React from 'react';
+import { Global } from '@emotion/core';
 import { addDecorator, addParameters, configure } from '@storybook/react';
 
 const isScreen = ({ kind, parameters }) => {
@@ -15,6 +16,13 @@ addParameters({
   margin: 0,
   background: context => (isScreen(context) ? '#f6f9fc' : '#fff'),
 });
+
+addDecorator(storyFn => (
+  <>
+    <Global styles={{ '*': { boxSizing: 'border-box' } }} />
+    {storyFn()}
+  </>
+));
 
 addDecorator((storyFn, context) => {
   if (isScreen(context)) return storyFn();

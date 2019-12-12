@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export default styled.div({
-  boxSizing: 'border-box',
   display: 'inline-flex',
   justifyContent: 'center',
   alignItems: 'center',
