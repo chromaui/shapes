@@ -4,7 +4,7 @@ import { addDecorator, addParameters, configure } from '@storybook/react';
 const isScreen = ({ kind, parameters }) => {
   if (parameters.isScreen !== undefined) return parameters.isScreen;
   const [storyRoot] = kind.split(parameters.options.hierarchyRootSeparator || '/');
-  return storyRoot === 'screens';
+  return storyRoot === 'screens' || storyRoot === 'layouts';
 };
 
 addParameters({
@@ -38,6 +38,7 @@ addDecorator((storyFn, context) => {
 configure(
   [
     require.context('../components', true, /\.stories\.js$/),
+    require.context('../layouts', true, /\.stories\.js$/),
     require.context('../screens', true, /\.stories\.js$/),
     require.context('../stories', true, /\.stories\.js$/),
   ],

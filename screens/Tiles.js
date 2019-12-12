@@ -4,22 +4,22 @@ import styled from '@emotion/styled';
 import * as shapes from '../components/Shapes';
 import Tile from '../components/Tile';
 
-const Tiles = styled.div`
-  display: inline-grid;
-  grid-template: 1fr 1fr / 1fr 1fr 1fr;
-  grid-gap: 3rem;
-  justify-items: center;
-  padding: 3rem;
+const Tiles = styled.div({
+  display: 'inline-grid',
+  gridTemplate: '1fr 1fr / 1fr 1fr 1fr',
+  gridGap: '3rem',
+  justifyItems: 'center',
+  padding: '3rem',
 
-  ${Tile} {
-    width: 100%;
-    &:after {
-      content: '';
-      display: block;
-      padding-bottom: 100%;
-    }
-  }
-`;
+  '& > *': {
+    width: '100%',
+    '&:after': {
+      content: '""',
+      display: 'block',
+      paddingBottom: '100%',
+    },
+  },
+});
 
 export default () => (
   <Tiles>
