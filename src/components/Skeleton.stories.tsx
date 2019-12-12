@@ -6,9 +6,9 @@ export default {
   title: 'components|Skeleton',
 };
 
-export const Box = () => <Skeleton.Box w={100} h={100} />;
-export const Oval = () => <Skeleton.Oval w={100} h={100} />;
-export const Line = () => <Skeleton.Line w={100} />;
+export const Box = () => <Skeleton.Box width={100} height={100} />;
+export const Oval = () => <Skeleton.Oval width={100} height={100} />;
+export const Line = () => <Skeleton.Line width={100} />;
 export const Lines = () => (
   <>
     <div style={{ fontSize: '0.75em' }}>

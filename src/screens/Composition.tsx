@@ -3,19 +3,19 @@ import styled from '@emotion/styled';
 
 import { Donut, L, Slice, Square, Triangle, Z } from '../components/Shapes';
 
-const Container = styled.div`
-  display: inline-block;
-  padding: 2rem;
-`;
+const Container = styled.div({
+  display: 'inline-block',
+  padding: '2rem',
+});
 
-const Composition = styled.div`
-  position: relative;
-  width: 560px;
-  height: 450px;
-  svg {
-    position: absolute;
-  }
-`;
+const Composition = styled.div({
+  position: 'relative',
+  width: '560px',
+  height: '450px',
+  '& > *': {
+    position: 'absolute',
+  },
+});
 
 export default () => (
   <Container>
