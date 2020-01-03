@@ -2,6 +2,8 @@ import React from 'react';
 import { Global } from '@emotion/core';
 import { addDecorator, addParameters, configure } from '@storybook/react';
 
+import globalStyles from '../src/helpers/globalStyles';
+
 const isScreen = ({ kind, parameters }) => {
   if (parameters.isScreen !== undefined) return parameters.isScreen;
   const [storyRoot] = kind.split(parameters.options.hierarchyRootSeparator || '/');
@@ -19,7 +21,7 @@ addParameters({
 
 addDecorator(storyFn => (
   <>
-    <Global styles={{ '*': { boxSizing: 'border-box' } }} />
+    <Global styles={globalStyles} />
     {storyFn()}
   </>
 ));
