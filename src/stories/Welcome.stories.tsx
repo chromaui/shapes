@@ -12,7 +12,6 @@ const Welcome = styled.div`
     left: 10%;
     right: 10%;
     text-align: center;
-    font-family: system-ui;
     line-height: 1.6em;
   }
   svg {

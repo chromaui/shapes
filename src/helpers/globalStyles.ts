@@ -22,7 +22,7 @@ export default {
   },
 
   'h1, h2, h3, h4, h5, h6': {
-    fontWeight: fontWeight.regular,
+    fontWeight: fontWeight.extrabold,
     margin: 0,
     padding: 0,
   },
