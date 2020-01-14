@@ -8,7 +8,9 @@ interface Props {
 
 const Shape = styled.svg<Props>(({ color }) => ({
   height: 100,
+  maxWidth: 100,
   fill: color,
+  verticalAlign: 'top',
 }));
 
 export const Donut = (props: Props) => (
@@ -47,8 +49,14 @@ export const Triangle = (props: Props) => (
   </Shape>
 );
 
+export const T = (props: Props) => (
+  <Shape viewBox="0 0 92 62" xmlns="http://www.w3.org/2000/svg" color="#FC521F" {...props}>
+    <path d="M63 3v25a3 3 0 003 3h23a3 3 0 013 3v25a3 3 0 01-3 3H3a3 3 0 01-3-3V34a3 3 0 013-3h24a3 3 0 003-3V3a3 3 0 013-3h27a3 3 0 013 3z" />
+  </Shape>
+);
+
 export const Z = (props: Props) => (
-  <Shape viewBox="0 0 56 90" xmlns="http://www.w3.org/2000/svg" color="#FC521F" {...props}>
+  <Shape viewBox="0 0 56 90" xmlns="http://www.w3.org/2000/svg" color="#6F2CAC" {...props}>
     <path d="M28 3v25a3 3 0 003 3h22a3 3 0 013 3v53a3 3 0 01-3 3H31a3 3 0 01-3-3V62a3 3 0 00-3-3H3a3 3 0 01-3-3V3a3 3 0 013-3h22a3 3 0 013 3z" />
   </Shape>
 );
