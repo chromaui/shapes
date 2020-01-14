@@ -7,6 +7,7 @@ interface Props {
 
 const base = (props: Partial<Props>) => ({
   display: 'inline-block',
+  verticalAlign: 'top',
   width: props.width || 'initial',
   height: props.height || 'initial',
   overflow: 'hidden',
