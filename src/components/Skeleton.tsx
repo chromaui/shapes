@@ -31,6 +31,7 @@ export const Line = styled.span<Partial<Props>>(
     margin: '0.1em 0.4em 0.1em 0',
   }),
   {
+    verticalAlign: 'middle',
     borderRadius: '1em',
     userSelect: 'none',
     color: 'transparent',
