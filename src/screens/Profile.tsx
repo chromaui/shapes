@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import Avatar from '../components/Avatar';
+import { Slice } from '../components/Shapes';
 import * as Skeleton from '../components/Skeleton';
 
 const Container = styled.div({
@@ -42,6 +43,7 @@ export default () => (
       <div style={{ gridArea: 'footer' }}>
         <Skeleton.Line width="100%" />
       </div>
+      <Slice />
     </Main>
   </Container>
 );
