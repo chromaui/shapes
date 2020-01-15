@@ -31,17 +31,9 @@ export const Slice = (props: Props) => (
   </Shape>
 );
 
-export const Square = (props: Props) => (
-  <Shape
-    viewBox="0 0 90 90"
-    xmlns="http://www.w3.org/2000/svg"
-    color="#1EA7FD"
-    {...props}
-    style={{ borderRadius: 5, ...props.style }}
-  >
-    <path d="M0 0h90v90H0z" />
-  </Shape>
-);
+export const Square = (props: Props) => {
+  throw new Error('Oops');
+};
 
 export const Triangle = (props: Props) => (
   <Shape viewBox="0 0 96 88" xmlns="http://www.w3.org/2000/svg" color="#FFAE00" {...props}>
