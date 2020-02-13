@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "@emotion/styled"
-import Composition from "../screens/Composition"
+import React from 'react';
+import styled from '@emotion/styled';
+import Composition from '../screens/Composition';
 
 const Welcome = styled.div`
   display: inline-block;
@@ -12,21 +12,23 @@ const Welcome = styled.div`
     left: 10%;
     right: 10%;
     text-align: center;
-    font-family: system-ui;
     line-height: 1.6em;
   }
   svg {
     opacity: 0.5;
   }
-`
+`;
 
 export default {
-  title: "Welcome"
-}
+  title: 'Welcome',
+  parameters: {
+    isScreen: true,
+  },
+};
 
 export const hi = () => (
   <Welcome>
     <Composition />
     <h1>Hi there, this is a demo Storybook for testing purposes.</h1>
   </Welcome>
-)
+);
