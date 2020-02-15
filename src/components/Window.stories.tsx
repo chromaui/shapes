@@ -2,7 +2,7 @@ import React from 'react';
 import { background } from '../tokens/palette';
 import Grid from './Grid';
 import Window from './Window';
-import { Donut, Slice, L, Z } from './Shapes';
+import { Donut, Slice, T, Z } from './Shapes';
 
 export default {
   title: 'components|Window',
@@ -17,7 +17,7 @@ export const Default = () => (
       <Slice />
       <Donut />
       <Z />
-      <L />
+      <T />
     </Grid>
   </Window>
 );
@@ -28,7 +28,7 @@ export const Muted = () => (
       <Slice />
       <Donut />
       <Z />
-      <L />
+      <T />
     </Grid>
   </Window>
 );
