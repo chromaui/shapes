@@ -27,12 +27,12 @@ export const Interactive = () => (
   <Grid cols={2}>
     <Paper interactive>
       <div style={{ padding: '1em' }}>
-        <h1>One</h1>
+        <h1>Lorem ipsum</h1>
       </div>
     </Paper>
     <Paper interactive>
       <div style={{ padding: '1em' }}>
-        <h1>Two</h1>
+        <h1>Dolor sit amet</h1>
       </div>
     </Paper>
   </Grid>
