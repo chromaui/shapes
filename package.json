@@ -32,8 +32,8 @@
     "prepare": "relative-deps",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "chromatic --app-code 2gsw6ht6am",
-    "chromatic-dev": "CHROMATIC_INDEX_URL=http://localhost:3007 chromatic",
+    "chromatic": "CHROMATIC_INDEX_URL=https://index.chromaticqa.com chromatic --app-code 2gsw6ht6am",
+    "chromatic-dev": "chromatic",
     "chromatic-staging": "CHROMATIC_INDEX_URL=https://staging-www.chromaticqa.com chromatic --app-code 71wybmryxr8"
   }
 }
