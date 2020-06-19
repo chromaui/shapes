@@ -20,8 +20,8 @@
     "@storybook/preset-typescript": "1.1.0",
     "@storybook/react": "5.2.8",
     "babel-loader": "8.0.6",
+    "chromatic": "5.0.0",
     "react-docgen-typescript-loader": "3.6.0",
-    "storybook-chromatic": "3.4.1",
     "ts-loader": "6.2.1",
     "typescript": "3.7.3"
   },
