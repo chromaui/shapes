@@ -27,7 +27,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic-prod": "CHROMATIC_INDEX_URL=https://index.chromaticqa.com chromatic --app-code 2gsw6ht6am",
+    "chromatic-prod": "CHROMATIC_INDEX_URL=https://index.chromatic.com chromatic --app-code 2gsw6ht6am",
     "chromatic-staging": "CHROMATIC_INDEX_URL=https://staging-index.chromatic.com chromatic --app-code 71wybmryxr8",
     "chromatic-dev": "CHROMATIC_INDEX_URL=https://index.dev-chromatic.com chromatic"
   }

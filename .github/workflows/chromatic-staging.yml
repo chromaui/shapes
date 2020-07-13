@@ -10,7 +10,7 @@ jobs:
           yarn
       - uses: chromaui/action@releases/v1
         env:
-          CHROMATIC_INDEX_URL: https://staging-www.chromaticqa.com
+          CHROMATIC_INDEX_URL: https://staging-www.chromatic.com
         with:
           appCode: 71wybmryxr8
           token: ${{ secrets.GITHUB_TOKEN }}
