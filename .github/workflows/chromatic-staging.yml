@@ -1,0 +1,16 @@
+name: "Chromatic"
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: |
+          yarn
+      - uses: chromaui/action@releases/v1
+        env:
+          CHROMATIC_INDEX_URL: https://staging-www.chromaticqa.com
+        with:
+          appCode: 71wybmryxr8
+          token: ${{ secrets.GITHUB_TOKEN }}
