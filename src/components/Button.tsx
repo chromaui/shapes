@@ -56,7 +56,7 @@ export default styled.button<Partial<Props>>(
     transform: 'translate3d(0, 0, 0)',
     verticalAlign: 'top',
     userSelect: 'none',
-    opacity: 0.5,
+    opacity: 1,
 
     fill: 'currentColor',
     color: outline ? color[appearance] : color.lightest,
