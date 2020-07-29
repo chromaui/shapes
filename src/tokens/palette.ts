@@ -8,7 +8,7 @@ export const background = {
 
 export const color = {
   // Palette
-  primary: '#FF4785', // coral
+  primary: '#004785', // coral
   secondary: '#1EA7FD', // ocean
   tertiary: '#DDDDDD',
 
