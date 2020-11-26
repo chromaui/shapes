@@ -4,8 +4,8 @@
   "author": "Gert Hengeveld <info@ghengeveld.nl>",
   "license": "MIT",
   "scripts": {
-    "start": "start-storybook -p 6006",
-    "build": "build-storybook",
+    "start": "start-storybook -s public -p 6006",
+    "build": "build-storybook -s public",
     "chromatic": "chromatic"
   },
   "dependencies": {
