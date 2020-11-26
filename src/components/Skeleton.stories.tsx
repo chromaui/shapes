@@ -3,7 +3,7 @@ import React from 'react';
 import * as Skeleton from './Skeleton';
 
 export default {
-  title: 'components|Skeleton',
+  title: 'Components / Skeleton',
 };
 
 export const Box = () => <Skeleton.Box width={100} height={100} />;

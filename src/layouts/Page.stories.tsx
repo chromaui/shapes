@@ -4,7 +4,10 @@ import { Oval } from '../components/Skeleton';
 import { Line, Lines } from '../components/Skeleton.stories';
 
 export default {
-  title: 'layouts|Page',
+  title: 'Layouts / Page',
+  parameters: {
+    layout: 'fullscreen',
+  },
 };
 
 export const Default = () => (
@@ -22,3 +25,5 @@ export const Default = () => (
     </div>
   </Page>
 );
+
+Default.storyName = "Page"

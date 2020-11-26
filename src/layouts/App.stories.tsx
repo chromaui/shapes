@@ -4,7 +4,10 @@ import { Oval } from '../components/Skeleton';
 import { Line, Lines } from '../components/Skeleton.stories';
 
 export default {
-  title: 'layouts|App',
+  title: 'Layouts / App',
+  parameters: {
+    layout: 'fullscreen',
+  },
 };
 
 export const Default = () => (
@@ -29,3 +32,5 @@ export const Default = () => (
     </div>
   </App>
 );
+
+Default.storyName = "App"

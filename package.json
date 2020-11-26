@@ -1,5 +1,5 @@
 {
-  "name": "storybook-demo",
+  "name": "shapes",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Gert Hengeveld <info@ghengeveld.nl>",
@@ -13,11 +13,9 @@
   },
   "devDependencies": {
     "@babel/core": "7.7.5",
-    "@storybook/addon-actions": "5.2.8",
-    "@storybook/addon-links": "5.2.8",
-    "@storybook/addons": "5.2.8",
-    "@storybook/preset-typescript": "1.1.0",
-    "@storybook/react": "5.2.8",
+    "@storybook/addon-essentials": "6.1.4",
+    "@storybook/addon-links": "6.1.4",
+    "@storybook/react": "6.1.4",
     "babel-loader": "8.0.6",
     "chromatic": "5.1.0-alpha.4",
     "react-docgen-typescript-loader": "3.6.0",

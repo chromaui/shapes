@@ -2,12 +2,13 @@ import React from 'react';
 
 import Grid from '../components/Grid';
 import Paper from '../components/Paper';
-import { background } from '../tokens/palette';
 
 export default {
-  title: 'components|Paper',
+  title: 'Components / Paper',
   parameters: {
-    background: background.app,
+    backgrounds: {
+      default: 'app',
+    },
   },
 };
 

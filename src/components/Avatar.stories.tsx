@@ -3,7 +3,7 @@ import Avatar from './Avatar';
 import Grid from './Grid';
 
 export default {
-  title: 'components|Avatar',
+  title: 'Components / Avatar',
 };
 
 export const Sizes = () => (

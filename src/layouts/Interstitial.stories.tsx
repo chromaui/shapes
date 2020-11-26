@@ -3,7 +3,10 @@ import Interstitial from './Interstitial';
 import { Lines } from '../components/Skeleton.stories';
 
 export default {
-  title: 'layouts|Interstitial',
+  title: 'Layouts / Interstitial',
+  parameters: {
+    layout: 'fullscreen',
+  },
 };
 
 export const Default = () => (
@@ -11,3 +14,5 @@ export const Default = () => (
     <Lines />
   </Interstitial>
 );
+
+Default.storyName = "Interstitial"

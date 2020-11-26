@@ -3,7 +3,7 @@ import Button from './Button';
 import Grid from './Grid';
 
 export default {
-  title: 'components|Button',
+  title: 'Components / Button',
 };
 
 export const Appearances = () => (

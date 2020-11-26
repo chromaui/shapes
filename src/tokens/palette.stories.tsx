@@ -24,7 +24,7 @@ const Swatch = styled.div<Props>(({ color }) => ({
 }));
 
 export default {
-  title: 'tokens|Palette',
+  title: 'Tokens / Palette',
 };
 
 export const Backgrounds = () => (

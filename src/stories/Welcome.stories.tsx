@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Composition from '../screens/Composition';
 
-const Welcome = styled.div`
+const Wrapper = styled.div`
   display: inline-block;
   position: relative;
 
@@ -22,13 +22,13 @@ const Welcome = styled.div`
 export default {
   title: 'Welcome',
   parameters: {
-    isScreen: true,
+    layout: 'fullscreen',
   },
 };
 
-export const hi = () => (
-  <Welcome>
+export const Welcome = () => (
+  <Wrapper>
     <Composition />
     <h1>Hi there, this is a demo Storybook for testing purposes.</h1>
-  </Welcome>
+  </Wrapper>
 );

@@ -16,10 +16,10 @@ const Swatch = styled.div<Props>(({ size, weight }) => ({
 }));
 
 export default {
-  title: 'tokens|Typography',
+  title: 'Tokens / Typography',
 };
 
-export const Overview = () => (
+export const Typography = () => (
   <Grid cols={4}>
     {Object.keys(fontWeight)
       .reverse()

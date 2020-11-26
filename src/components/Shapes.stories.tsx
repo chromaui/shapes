@@ -1,5 +1,5 @@
 export default {
-  title: 'components|Shapes',
+  title: 'Components / Shapes',
 };
 
 export * from './Shapes';
