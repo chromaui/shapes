@@ -11,10 +11,10 @@ export default {
     overflowY: 'auto',
     overflowX: 'hidden',
 
-    '-webkit-font-smoothing': 'antialiased',
-    '-moz-osx-font-smoothing': 'grayscale',
-    '-webkit-tap-highlight-color': 'transparent',
-    '-webkit-overflow-scrolling': 'touch',
+    WebkitFontSmoothing: 'antialiased',
+    MozOsxFontSmoothing: 'grayscale',
+    WebkitTapHighlightColor: 'transparent',
+    WebkitOverflowScrolling: 'touch',
   },
 
   '*': {
@@ -58,8 +58,8 @@ export default {
   'code, pre': {
     fontFamily: fontFamily.code,
     fontSize: fontSize.small,
-    '-webkit-font-smoothing': 'antialiased',
-    '-moz-osx-font-smoothing': 'grayscale',
+    WebkitFontSmoothing: 'antialiased',
+    MozOsxFontSmoothing: 'grayscale',
   },
 
   code: {
