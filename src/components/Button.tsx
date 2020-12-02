@@ -35,7 +35,7 @@ const focusShadow = (
 };
 
 export default styled.button<Partial<Props>>(
-  ({ appearance = Appearance.primary, wide = false, outline = true, disabled = false }) => ({
+  ({ appearance = Appearance.primary, wide = false, outline = false, disabled = false }) => ({
     position: 'relative',
     display: 'inline-flex',
     justifyContent: 'space-between',

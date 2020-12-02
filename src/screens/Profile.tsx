@@ -38,7 +38,7 @@ export default () => (
     </Left>
     <Main>
     <input placeholder="Enter your email address"></input>
-    <Button appearance="primary">Save</Button>
+    <Button appearance="primary" outline="false">Save</Button>
       <Skeleton.Line width="100%" style={{ gridArea: 'header' }} />
       <Skeleton.Line width="100%" height="100%" style={{ gridArea: 'text' }} />
       <Skeleton.Line width="100%" height="100%" style={{ gridArea: 'image' }} />
