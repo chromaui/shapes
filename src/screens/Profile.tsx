@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 
 import Avatar from '../components/Avatar';
 import * as Skeleton from '../components/Skeleton';
+import Button from '../components/Button';
 
 const Container = styled.div({
   display: 'grid',
@@ -30,12 +31,14 @@ const Main = styled.div({
 
 export default () => (
   <Container>
-    <Left>
+    <Left>    
       <Avatar size="huge" appearance="secondary" />
       <Skeleton.Line width={100} height={20} />
       <Skeleton.Line width={80} />
     </Left>
     <Main>
+    <input placeholder="Enter your email address"></input>
+    <Button appearance="primary">Save</Button>
       <Skeleton.Line width="100%" style={{ gridArea: 'header' }} />
       <Skeleton.Line width="100%" height="100%" style={{ gridArea: 'text' }} />
       <Skeleton.Line width="100%" height="100%" style={{ gridArea: 'image' }} />
