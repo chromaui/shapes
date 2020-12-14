@@ -4,6 +4,7 @@ import { Lines } from '../components/Skeleton.stories';
 
 export default {
   title: 'Layouts / Interstitial',
+  component: Interstitial,
   parameters: {
     layout: 'fullscreen',
   },

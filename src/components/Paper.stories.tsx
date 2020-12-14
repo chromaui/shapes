@@ -5,6 +5,7 @@ import Paper from '../components/Paper';
 
 export default {
   title: 'Components / Paper',
+  component: Paper,
   parameters: {
     backgrounds: {
       default: 'app',

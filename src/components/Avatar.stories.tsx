@@ -4,6 +4,7 @@ import Grid from './Grid';
 
 export default {
   title: 'Components / Avatar',
+  component: Avatar,
 };
 
 export const Sizes = () => (

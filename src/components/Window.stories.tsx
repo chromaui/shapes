@@ -5,6 +5,7 @@ import { Donut, Slice, T, Z } from './Shapes';
 
 export default {
   title: 'Components / Window',
+  component: Window,
   parameters: {
     backgrounds: {
       default: 'app',

@@ -5,6 +5,7 @@ import { Line, Lines } from '../components/Skeleton.stories';
 
 export default {
   title: 'Layouts / Page',
+  components: Page,
   parameters: {
     layout: 'fullscreen',
   },

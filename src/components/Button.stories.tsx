@@ -4,6 +4,7 @@ import Grid from './Grid';
 
 export default {
   title: 'Components / Button',
+  component: Button,
 };
 
 export const Appearances = () => (

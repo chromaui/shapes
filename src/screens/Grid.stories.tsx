@@ -3,6 +3,7 @@ import Grid from '../screens/Grid';
 
 export default {
   title: 'Screens / Shapes / Grid',
+  component: Grid,
   parameters: {
     layout: 'fullscreen',
     backgrounds: {
