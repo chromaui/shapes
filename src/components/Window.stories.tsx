@@ -1,36 +1,39 @@
 import React from 'react';
 import Grid from './Grid';
-import Window from './Window';
 import { Donut, Slice, T, Z } from './Shapes';
 
 export default {
   title: 'Components / Window',
   component: Window,
+  args: {
+    muted: false,
+  },
   parameters: {
     backgrounds: {
       default: 'app',
     },
   },
+  loaders: [() => import('./Window')],
 };
 
-export const Default = () => (
-  <Window>
-    <Grid cols={4}>
-      <Slice />
-      <Donut />
-      <Z />
-      <T />
-    </Grid>
-  </Window>
-);
+const Template = (args, { loaded }) => {
+  const { default: Window } = loaded;
+  return (
+    <Window {...args}>
+      <Grid cols={4}>
+        <Slice />
+        <Donut />
+        <Z />
+        <T />
+      </Grid>
+    </Window>
+  );
+};
 
-export const Muted = () => (
-  <Window muted>
-    <Grid cols={4}>
-      <Slice />
-      <Donut />
-      <Z />
-      <T />
-    </Grid>
-  </Window>
-);
+export const Default = Template.bind({});
+
+export const Muted = Template.bind({});
+
+Muted.args = {
+  muted: true,
+};

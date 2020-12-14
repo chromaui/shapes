@@ -12,3 +12,5 @@ Notable features:
 - **Layout stories**: Stories for visual layouts using slots and children, to encourage layout consistency by reuse. Rendered in full screen.
 - **Screen stories**: Stories for entire app screens (pages) that combine layouts and components, rendered full screen. Build entire apps without connecting any backend. This enables regression testing against actual component usage in the final app.
 - **Chromatic viewports**: Grid is tested against multiple viewports.
+- **Component lazy loading**: Button is lazy-loaded directly, while Window uses an Args template with lazy loading.
+- **Single-story hoisting**: The Welcome story is hoisted to component level in the sidebar.

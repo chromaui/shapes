@@ -1,13 +1,12 @@
 import React from 'react';
-import Button from './Button';
 import Grid from './Grid';
 
 export default {
   title: 'Components / Button',
-  component: Button,
+  loaders: [() => import('./Button')]
 };
 
-export const Appearances = () => (
+export const Appearances = (args, { loaded: { default: Button } }) => (
   <Grid cols={3}>
     <Button appearance="primary">Primary</Button>
     <Button appearance="primary" outline>
@@ -35,7 +34,7 @@ export const Appearances = () => (
   </Grid>
 );
 
-export const Sizes = () => (
+export const Sizes = (args, { loaded: { default: Button } }) => (
   <Grid cols={2}>
     <Button size="small">Small</Button>
     <Button size="small" compact>
@@ -52,7 +51,7 @@ export const Sizes = () => (
   </Grid>
 );
 
-export const AligningContent = () => (
+export const AligningContent = (args, { loaded: { default: Button } }) => (
   <Grid cols={3}>
     <Button appearance="secondary" outline compact>
       <svg viewBox="0 0 1024 1024" width="16" height="16">
