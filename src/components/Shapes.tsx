@@ -37,7 +37,7 @@ export const Square = (props: Props) => (
     xmlns="http://www.w3.org/2000/svg"
     color="#1EA7FD"
     {...props}
-    style={{ borderRadius: 4, ...props.style }}
+    style={{ borderRadius: 9, ...props.style }}
   >
     <path d="M0 0h90v90H0z" />
   </Shape>
