@@ -4414,10 +4414,10 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-chromatic@5.7.2-canary.1:
-  version "5.7.2-canary.1"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-5.7.2-canary.1.tgz#67c7cb4abaf5b33746870753a4ce7f22ca9ecefc"
-  integrity sha512-/0ryEtyFyshnAuHZu/8qJG4UdEVyi4I1XMimbnXpjjeNvvztGWu3IvSJoGxCrYXdhBrnHuEAIfcr+Vs1DBfTrg==
+chromatic@5.7.2-canary.2:
+  version "5.7.2-canary.2"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-5.7.2-canary.2.tgz#e56d3da03a94b90b304ad78e659e913fdb4f60b6"
+  integrity sha512-7uEe7QjGKwsGEQL9b4598A06IuENDhLQBDd9KyCYW2dTMPBkqI0KQgWFNZxLEELPHEwQ/CLwNs5+F5GzzMXZEQ==
   dependencies:
     "@actions/core" "^1.2.4"
     "@actions/github" "^4.0.0"
