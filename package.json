@@ -21,7 +21,7 @@
     "@storybook/addon-links": "6.1.6",
     "@storybook/react": "6.1.6",
     "babel-loader": "8.0.6",
-    "chromatic": "5.4.0",
+    "chromatic": "5.7.2-canary.0",
     "react-docgen-typescript-loader": "3.6.0",
     "ts-loader": "6.2.1",
     "typescript": "3.7.3"
