@@ -14,5 +14,3 @@ Notable features:
 - **Chromatic viewports**: Grid is tested against multiple viewports.
 - **Component lazy loading**: Button is lazy-loaded directly, while Window uses an Args template with lazy loading.
 - **Single-story hoisting**: The Welcome story is hoisted to component level in the sidebar.
-
-Readme change
