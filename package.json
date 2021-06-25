@@ -6,7 +6,9 @@
   "scripts": {
     "start": "start-storybook -s public -p 6006",
     "build": "build-storybook -s public",
-    "chromatic": "chromatic"
+    "chromatic": "chromatic",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@emotion/core": "10.0.22",
