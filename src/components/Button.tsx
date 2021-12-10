@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { darken, rgba } from 'polished';
-
 import { color } from '../tokens/palette';
 import { fontFamily, fontSize, fontWeight } from '../tokens/typography';
+
 
 export enum Appearance {
   primary = 'primary',
@@ -60,7 +60,7 @@ export default styled.button<Partial<Props>>(
 
     fill: 'currentColor',
     color: outline ? color[appearance] : color.lightest,
-    background: outline ? 'transparent' : color[appearance],
+    background: 'red',
     boxShadow: outline ? `${color[appearance]} 0 0 0 1px inset` : 'none',
 
     ...(appearance === Appearance.tertiary && { color: outline ? color.dark : color.darkest }),
@@ -93,30 +93,30 @@ export default styled.button<Partial<Props>>(
     }),
   }),
   ({ size = Size.medium, compact = false }) =>
-    ({
-      small: {
-        height: 28,
-        padding: '0 16px',
-        fontSize: fontSize.smaller,
-        ...(compact === true && { padding: '0 6px' }),
-        ...(compact === 'left' && { paddingLeft: 6 }),
-        ...(compact === 'right' && { paddingRight: 6 }),
-      },
-      medium: {
-        height: 40,
-        padding: '0 20px',
-        fontSize: fontSize.small,
-        ...(compact === true && { padding: '0 12px' }),
-        ...(compact === 'left' && { paddingLeft: 12 }),
-        ...(compact === 'right' && { paddingRight: 12 }),
-      },
-      large: {
-        height: 48,
-        padding: '0 32px',
-        fontSize: fontSize.medium,
-        ...(compact === true && { padding: '0 16px' }),
-        ...(compact === 'left' && { paddingLeft: 16 }),
-        ...(compact === 'right' && { paddingRight: 16 }),
-      },
-    }[size])
+  ({
+    small: {
+      height: 28,
+      padding: '0 16px',
+      fontSize: fontSize.smaller,
+      ...(compact === true && { padding: '0 6px' }),
+      ...(compact === 'left' && { paddingLeft: 6 }),
+      ...(compact === 'right' && { paddingRight: 6 }),
+    },
+    medium: {
+      height: 40,
+      padding: '0 20px',
+      fontSize: fontSize.small,
+      ...(compact === true && { padding: '0 12px' }),
+      ...(compact === 'left' && { paddingLeft: 12 }),
+      ...(compact === 'right' && { paddingRight: 12 }),
+    },
+    large: {
+      height: 48,
+      padding: '0 32px',
+      fontSize: fontSize.medium,
+      ...(compact === true && { padding: '0 16px' }),
+      ...(compact === 'left' && { paddingLeft: 16 }),
+      ...(compact === 'right' && { paddingRight: 16 }),
+    },
+  }[size])
 );

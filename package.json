@@ -6,7 +6,7 @@
   "scripts": {
     "start": "start-storybook -s public -p 6006",
     "build": "build-storybook -s public",
-    "chromatic": "chromatic",
+    "chromatic": "CHROMATIC_INDEX_URL=https://www.dev-chromatic.com npx chromatic --project-token=790f5b00cd7d",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
