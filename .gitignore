@@ -4,3 +4,4 @@ storybook-static
 .env
 build-storybook.log
 chromatic-build-*.xml
+chromatic-diagnostics.json

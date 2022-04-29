@@ -1,0 +1,22 @@
+# Sets the docker image for the job
+image: node:latest
+
+# Sets the stages for the pipeline
+stages:
+  - test
+
+# Cache the dependencies
+cache:
+  key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+  paths:
+    - .yarn
+
+# Installs the dependencies
+before_script:
+  - yarn install --frozen-lockfile --prefer-offline --cache-folder .yarn
+
+#👇Adds Chromatic as a job
+chromatic_publish:
+  stage: test
+  script:
+    - yarn chromatic-base-staging --project-token=735912804345
