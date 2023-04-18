@@ -42,7 +42,7 @@ export default styled.button<Partial<Props>>(
     alignItems: 'center',
     width: wide ? '100%' : 'auto',
     border: 0,
-    borderRadius: '3em',
+    borderRadius: '1em',
     textAlign: 'center',
     textDecoration: 'none',
     overflow: 'hidden',
