@@ -8,7 +8,8 @@
     "build": "build-storybook -s public",
     "chromatic": "chromatic",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test-storybook": "test-storybook"
   },
   "dependencies": {
     "@emotion/core": "10.0.22",
@@ -19,9 +20,10 @@
   },
   "devDependencies": {
     "@babel/core": "7.7.5",
-    "@storybook/addon-essentials": "^6.3.4",
-    "@storybook/addon-links": "^6.3.4",
-    "@storybook/react": "^6.3.4",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/react": "^6.5.13",
+    "@storybook/test-runner": "0.9.4",
     "babel-loader": "8.0.6",
     "chromatic": "^6.1.0",
     "react-docgen-typescript-loader": "3.6.0",
