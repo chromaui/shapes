@@ -1,5 +1,6 @@
 import React from 'react';
 import { Global } from '@emotion/core';
+import { Test } from '@reuben/test.js';
 
 import globalStyles from '../src/helpers/globalStyles';
 import { background } from '../src/tokens/palette';
@@ -20,6 +21,7 @@ export const decorators = [
     <>
       <Global styles={globalStyles} />
       <Story />
+      <Test />
     </>
   ),
 ];
